@@ -1,7 +1,7 @@
 <html>
 <body>
 <script>
-window.alert("Hello World!");
+window.alert("Hello World! - It's a Monday");
 </script>
 </body>
 </html>
