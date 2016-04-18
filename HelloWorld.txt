@@ -1,7 +1,24 @@
+<!DOCTYPE html>
 <html>
-<body>
-<script>
-window.alert("Hello World! - It's a Monday");
-</script>
-</body>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script2.js"></script> --->
+    <script>
+        // Add an event listener which invokes the function when webpage first loads - the window object has a method called add eventlistener which accepts 3 arguments.
+        // Argument 1 is event it's listening for, 2nd is the function that is being invoked, 3rd one is the boolean which generally is set to false.
+        window.addEventListener('load',myfirst,false);
+        function myfirst() {
+            // window object and calling the alert method which accepts a string argument
+            window.alert("Hello World!");
+            // javascript is accessing a dom object (document) and a common method to write to the HTML page where there is an element with an ID = demo.
+            document.getElementById("demo").innerHTML = "Hello World!";
+        }
+    </script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+  </body>
+
 </html>
